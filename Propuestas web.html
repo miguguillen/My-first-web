@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Guillén</title>
+    <link
+      rel="shortcut icon"
+      href="Images/New Project.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="CSS/normalize copy.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <a href="index.html"><img src="Images/logomigu.png" alt="" width="220px" class="logo_migu"></a>
+        </div>
+
+        <ul class="nav__link nav__link--menu">
+          <li class="nav__items">
+            <a href="index.html" class="nav__links">Inicio</a>
+          </li>
+
+          <li class="nav__items">
+            <a href="sobremi.html" class="nav__links">Sobre mí</a>
+          </li>
+
+          <li class="nav__items">
+            <a href="recursos.html" class="nav__links">Recursos gratuitos</a>
+          </li>
+
+          <li class="nav__items">
+            <a href="contacto.html" class="nav__links">Contacto</a>
+          </li>
+
+          <img src="Images/quit.svg" alt="" class="nav__close" />
+        </ul>
+
+        <div class="nav__menu">
+          <img src="Images/menu.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <body class="contact__body">
+        <h2 class="contact__title">¡MEJOREMOS TU WEB!</h2>
+        <form
+          class="mensaje__forma"
+          action="https://formspree.io/f/xgebrgrn"
+          method="post"
+        >
+          <h2 class="contacto__contacto"></h2>
+          <div class="input__group">
+            <label for="name" class="label__contact">Nombre:</label>
+            <input
+              class="input__contact"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre"
+              required
+            />
+
+            <label for="apellido" class="label__contact">Apellidos:</label>
+            <input
+              class="input__contact"
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Apellidos"
+            />
+
+            <label for="correo" class="label__contact">Correo:</label>
+            <input
+              class="input__contact"
+              type="email"
+              name="correo"
+              id="correo"
+              placeholder="example@gmail.com"
+              required
+            />
+
+            <label for="mensaje" class="label__contact">Mensaje:</label>
+            <textarea
+              class="input__contact"
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="5"
+              placeholder="Breve explicación de lo que buscas e información relevante del proyecto."
+              required
+            ></textarea>
+
+            <input class="botton__contact" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </body>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__container">
+        <nav class="nav nav--footer">
+          <ul class="nav__link nav__link--footer">
+            <li class="nav__items">
+              <a href="index.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+              <a href="sobremi.html" class="nav__links">Sobre mí</a>
+            </li>
+            <li class="nav__items">
+              <a href="recursos.html" class="nav__links">Recursos gratuitos</a>
+            </li>
+            <li class="nav__items">
+              <a href="contacto.html" class="nav__links">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="footer__copy container">
+        <div class="footer__social">
+          <a
+            href="https://www.instagram.com/miguguillen/"
+            target="_blank"
+            class="footer__icons"
+            ><img src="Images/instagram.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/miguguillen/"
+            target="_blank"
+            class="footer__icons"
+            ><img src="Images/linkedin.svg" alt=""
+          /></a>
+          <a
+            href="https://www.twitter.com/miguguillen/"
+            target="_blank"
+            class="footer__icons"
+            ><img src="Images/twitter.svg" alt=""
+          /></a>
+        </div>
+
+        <h3 class="footer__copyright">
+          All rights reserved &copy; 2023 Miguel Guillén
+        </h3>
+      </section>
+    </footer>
+
+    <script src="/JS/menu.js"></script>
+  </body>
+</html>
